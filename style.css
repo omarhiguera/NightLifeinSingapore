@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #cef;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+.loader {
+    background-color: #030526;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+h1, h4 {
+    font-family: 'Bebas Neue', cursive;
+}
+p, a, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    background-image: url("Nueva Carpeta/header/singapur-header.jpg");
+    background-position: bottom; 
+    height: 100vh;
+    background-size: cover;
+    padding: 30px;
+}
+
+.titulo {
+    margin-bottom: 50px;
+    padding: 80px;
+    color: white;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 50px;
+}
+.btn-tlf {
+    background-color: white;
+    width: 90px;
+    display: none; 
+}
+.logo-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav a {
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+}
+.btn-nav {
+    margin-left: 18px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-nav:hover {
+    opacity: 0.8;
+}
+.nav-tlf {
+    display: none;
+}
+.arrow-end {
+    display: flex;
+    justify-content: center;
+}
+.caja1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.texto1 {
+    width: 50%;
+    background-color: #030526;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.texto1 p {
+    color: #a9aab8;
+    line-height: 30px;
+    font-size:large
+}
+
+.texto1 h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #a9aab8;
+}
+
+.texto1 a {
+    font-size: 28px;
+    color: #a9aab8;
+    text-decoration: underline;
+    text-decoration-color: #0067C3;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 30px;
+}
+.foto1 {
+    background-image: url("Nueva Carpeta/main/singapur1-min.jpg");
+    background-position: 50%;
+    background-size: cover;
+    height: 550px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    
+}
+.caja2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.texto2 {
+    width: 50%;
+    background-color: #030526;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.texto2 a {
+    font-size: 28px;
+    color: #a9aab8;
+    text-decoration: underline;
+    text-decoration-color: #0067C3;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 30px;
+}
+.texto2 p {
+    color: #a9aab8;
+    line-height: 30px;
+    font-size:large
+}
+
+.texto2 h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #a9aab8;
+}
+.foto2 {
+    background-image: url("Nueva Carpeta/main/singapur3-min.jpg");
+    background-position: 50%;
+    background-size: cover;
+    height: 550px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.dos-juntas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.juntas-main1 {
+    background-image:  url("Nueva Carpeta/main/singapur4-min.jpg");
+    background-position: 50%;
+    background-size: cover;
+    height: 550px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.juntas-main2 {
+    background-image:  url("Nueva Carpeta/main/singapur2-min.jpg");
+    background-position: 50%;
+    background-size: cover;
+    height: 550px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+} 
+.places {
+    background-color: #030526;
+    margin: 0;
+}
+h4 {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    font-size: 40px;
+    color: #a9aab8 ;
+}
+.cards-places-main {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 80px;
+    margin-bottom: 0;
+}
+.cards-place {
+    height: 35%;
+    color: #a9aab8;
+}
+.cards-place img {
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.cards-about {
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: justify;
+    margin-left: 50px;
+}
+.cards-name {
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 25px;
+}
+.cards-point {
+    margin-top: 25px;
+    font-size: 14px;
+}
+.cuatro-juntas {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    background-color: #030526;
+    color: #a9aab8;
+}
+.nav-footer {
+    margin: 40px;
+}
+.nav-footer a {
+    margin: 15px;
+    color: #a9aab8;
+    text-decoration: underline;
+    text-decoration-color: #0067C3;
+}
+.social-media img {
+    margin: 15px;
+    cursor: pointer;
+}
+.atributtion {
+    display: flex;
+}
+.atributtion p {
+    margin: 10px;
+}
+span {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #0067C3;
+}
+.juntas-main1,
+.juntas-main2 {
+    color: white;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+.juntas-main1 h1,
+.juntas-main2 h1 {
+    margin-top: 450px;
+    margin-left: 30px;
+}
+@media (max-width: 450px) {
+    header {
+        height: 59vh;
+    }
+    .titulo {
+        font-size: larger;
+    }
+    .btn-tlf {
+        background-color: white;
+        width: 90px;
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 48px;
+        border: 3px solid black;
+    }
+    .logo {
+        margin-left: -50px;
+        margin-top: -25px;
+    }
+    .titulo {
+        font-size: 30px;
+        margin-top: -25px;
+    } 
+    .nav {
+        display: none;
+    }
+    .nav-tlf {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        padding: 2rem;
+        border: 3px solid black;
+        top: 120px;
+        right: 7px;
+        left: 0.3px;
+    }
+    .nav-tlf a{
+        margin-top: 30px;
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: black;
+        font-size: 15px;
+    }
+    .jquery-btn {
+        display: none;
+    }
+
+    .btn-nav{
+        margin-top: 30px;
+        color: black;
+        font-size: 15px;
+    }
+    .caja1 {
+        flex-direction: column-reverse;
+    }
+    .arrow-end {
+        display: none;
+    }
+    .texto1 {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: left;
+    }
+    .texto1 a {
+        margin-top: 20px;
+    }
+    .texto2 a {
+        margin-top: 20px;
+    }
+    .foto1 {
+        width: 100%;
+    }
+    .caja2 {
+        flex-direction: column;
+       
+    }
+    .texto2 {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: left;
+    }
+    .foto2 {
+        width: 100%;
+    }
+    .dos-juntas {
+        flex-direction: column;
+    }
+    .juntas-main1 {
+        width: 100%;
+    }
+    .juntas-main2 {
+        width: 100%;
+    }
+    .cards-places-main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .cards-place img {
+        margin-top: 40px;
+    }
+    h4 {
+        padding: 1.5rem;
+    }
+    .cuatro-juntas {
+        flex-direction: column;
+    }
+    .cuatro-juntas img {
+        width: 100%;
+    }
+    .nav-footer a {
+        margin: 20px;
+        padding: 45px;
+    }
+    .cards-about {
+        margin-right: 50px;
+    }
+    .cards-point {
+        margin-bottom: 20px;
+    }
+}
